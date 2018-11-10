@@ -1,0 +1,15 @@
+{
+  "name": "beachbot",
+  "version": "1.0.0",
+  "description": "it's just a normal bot for normal things",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kashell",
+  "license": "ISC",
+  "dependencies": {
+    "claudia-bot-builder": "^4.5.0",
+    "huh": "^2.0.1"
+  }
+}

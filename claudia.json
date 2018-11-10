@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "beachbot-executor",
+    "name": "beachbot",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "tw48kfqqoc",
+    "module": "bot"
+  }
+}
