@@ -1,8 +1,7 @@
-var botBuilder = require('claudia-bot-builder'),
-    excuse = require('huh');
+const botBuilder = require('claudia-bot-builder');
+const telegramTemplate = botBuilder.telegramTemplate;
 
-module.exports = botBuilder(function (request) {
-  return 'Thanks for sending ' + request.text  + 
-      '. Your message is very important to us, but ' + 
-      excuse.get();
+module.exports = botBuilder(message => {
+  if (message.type === 'telegram')
+    return new telegramTemplate.Photo('https://claudiajs.com/assets/claudiajs.png').get();
 });
